@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Netflix 💖 Created By Harsh Rana</title>
+  <title>Netflix India 💛 Designed By Harsh Rana</title>
   <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -63,6 +63,13 @@
 </head>
 
 <body class="font-inter">
+  <!-- dark mode div -->
+  <div class="fixed right-2 top-1/2 z-50 ">
+    <p class="text-white dark:text-black mb-2">Change Mode</p>
+    <div class="bg-gray-500 w-20 cursor-pointer rounded-3xl toggler dark:bg-gray-950">
+      <div class="bg-white w-10 h-10 scale-75 rounded-3xl transition-transform dark:bg-zinc-200"></div>
+    </div>
+  </div>
   <!-- =========================================================================================
       =========================================================================================
                              NetFlix Website Using Tailwind CSS 🍦
@@ -101,9 +108,7 @@
       </div>
 
       <button class="btn-sm">Sign In</button>
-      <div class="bg-gray-500 w-20 cursor-pointer rounded-3xl toggler dark:bg-gray-950">
-        <div class="bg-white w-10 h-10 scale-75 rounded-3xl transition-transform dark:bg-zinc-200"></div>
-      </div>
+
     </div>
   </header>
 
@@ -514,8 +519,8 @@
     }
   });
 
-   // Jquery Code for Accordion
-   $(".toggle").click(function (e) {
+  // Jquery Code for Accordion
+  $(".toggle").click(function (e) {
     e.preventDefault();
 
     let $this = $(this);
